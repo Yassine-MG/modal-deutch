@@ -1,0 +1,374 @@
+*{
+  
+    box-shadow: none;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Black.otf') format('opentype');
+  font-weight: 900; /* Use a weight that represents 'Black' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-ExtraBold.otf') format('opentype');
+  font-weight: 800; /* Use a weight that represents 'ExtraBold' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-ExtraBoldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Light.otf') format('opentype');
+  font-weight: 300; /* Use a weight that represents 'Light' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Medium.otf') format('opentype');
+  font-weight: 500; /* Use a weight that represents 'Medium' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-Thin.otf') format('opentype');
+  font-weight: 100; /* Use a weight that represents 'Thin' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fractul';
+  src: url('./Fonts/Fractul-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+
+/* p, h1, h2, h3, h4, h5, h6, span, button{
+    font-family: "Roboto", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight:500 !important;
+    font-family: "Roboto", sans-serif !important;
+} */
+/* The Modal (background) */
+.modal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-color: #0006;
+    /* display:none; */
+     backdrop-filter: blur(8px); /* Apply blur effect to background behind the modal */
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Modal Content */
+.modal-content {
+    max-width:90%;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    position: relative;
+    max-height: 80vh;
+    border-radius:20px;
+    overflow-y: auto;
+}
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+.modal-div{
+  width: 30%;
+  margin:0 auto; 
+}
+@media only screen and (max-width: 1400px){
+  .modal-div{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .modal-div{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 780px){
+  .modal-div{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 610px){
+  .modal-div{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 430px){
+  .modal-div{
+    width: 100%; 
+  }
+}
+.circle > i{
+  position: absolute;
+  color: #fff;
+  font-size: 11px;
+  font-weight: lighter;
+}
+.steps-take-back-1 i{
+    bottom: 3px;
+    right: 7px;
+}
+.steps-take-back-2 i{
+    bottom: 2px;
+    right: 7px;
+}
+.steps-take-back-3 i{
+    bottom: 2px;
+    right: 7px;
+}
+.steps-take-back-4 i{
+    bottom: 3px;
+    right: 7px;
+}
+.steps-take-back-5 i{
+    bottom: 2px;
+    right: 6px;
+}
+.modal-header{
+  position: sticky;
+  top: -1px;
+  padding: 10px;
+  background-color: #fefefe; 
+  z-index: 10;
+  border-radius: 20px 20px 0 0;
+}
+
+.modal-header > h2{
+  font-size :16px;
+  padding-top:10px;
+  font-weight:500 ;
+/*   font-family: "Roboto", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+    /* font-family: ; */
+  text-align:center;
+  margin:0;
+}
+.title-trade{
+  width:100%;
+  margin:0 auto;
+}
+.title-trade > h1{
+  font-size : 29px;
+  font-weight:700;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+  margin:0;
+  text-align:center;
+}
+.title-trade > p{
+  font-weight:500;
+  line-height: 1.5 ;
+/*   font-family: "Roboto", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+  text-align:justify;
+}
+.title-description{
+  background-color:#f1f7fa;
+  padding:20px 40px 0px;
+}
+.container-img{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin:0px 0 5px;
+}
+.container-img > img {
+  width:40px;
+  margin-left:10px;
+}
+.container-img > p{
+  margin:0;
+/*   font-family: "Roboto", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+}
+.how-it-works > h1{
+  text-align:center;
+    font-weight:500 ;
+/*     font-family: "Roboto", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+  font-size : 25px;
+  font-weight: 700;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.title-name{
+  font-weight:bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  display: block !important;
+  position:relative;
+  border-radius: 50%;
+  background-color: black;
+}
+.steps-take-back-1 > .line{
+  height: 42px;
+}
+.steps-take-back-2 > .line{
+  height: 44px;
+}
+.steps-take-back-3 > .line{
+  height: 30px;
+}
+.steps-take-back-4 > .line{
+  height: 45px;
+}
+
+
+.line {
+  display: block !important;
+  margin-left: 10px; /* Adjust spacing as needed */
+  width: 2px; /* Adjust thickness as needed */
+  background-color: grey;
+  position:relative;
+  top:6px;
+}
+.steps-take-container > h3{
+  font-weight:700 ;
+/*   font-family: "Roboto", sans-serif; */
+  font-family: 'Fractul', sans-serif;
+  font-size:18px;
+  margin:0;
+}
+.steps-take-container{
+  margin: 0 0 20px 0;
+}
+.steps-take-back> cercle{
+  position:relative;
+}
+.steps-take-back{
+  position:absolute;
+  left:54px;
+}
+.steps-take-container > p{
+  margin: 0;
+  line-height: 1.5 ;
+  font-family: 'Fractul', sans-serif;
+  font-size:12px;
+  font-weight:700;
+}
+.how-it-works-content{
+  background-color:white;
+  padding:30px;
+  margin:5px 0;
+  border-radius: 14px;
+}
+.how-it-works-content > div{
+  width:95%;
+  margin:0 0 0 auto;
+}
+.btn-div{
+  width:100%;
+  /* padding: 0px 40px 5px; */
+  background-color:#f1f7fa;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+.btn-cls{
+  background-color :#000000;
+  color: white;
+  width:100%;
+  font-size:20px;
+  padding:15px;
+  margin:10px 0;
+  border-radius:10px;
+  border :0px;
+  cursor:pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animated-element {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
