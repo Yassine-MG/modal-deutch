@@ -119,11 +119,6 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
-    background-color: #0006;
-    /* display:none; */
-     backdrop-filter: blur(8px); /* Apply blur effect to background behind the modal */
-    -webkit-backdrop-filter: blur(8px);
 }
 
 /* Modal Content */
